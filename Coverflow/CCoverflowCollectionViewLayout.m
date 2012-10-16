@@ -34,6 +34,15 @@
     return([CBetterCollectionViewLayoutAttributes class]);
     }
 
+- (id)init {
+    self = [super init];
+    if(self) {
+        [self awakeFromNib];
+    }
+    
+    return self;
+}
+
 - (void)awakeFromNib
 	{
 	// TODO I don't like putting this in awakeFromNib - but init is never called. Silly.
